@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: monitorsystem-deployment
+  name: monitorsystem-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: monitorsystem-deployment
+  template:
+    metadata:
+      labels:
+        app: monitorsystem-deployment
+    spec:
+      containers:
+      - image: sumit0058/monitorsystem:latest
+        name: monitorsystem
+        ports:
+        - containerPort: 5000
+
