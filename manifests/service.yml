@@ -10,5 +10,5 @@ spec:
     protocol: TCP
     targetPort: 5000
   selector:
-    app: monitorsystem-svc
+    app: monitorsystem-deployment
   type: NodePort
