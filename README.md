@@ -20,6 +20,12 @@ kubectl port-forward svc/argocd-server -n argocd 8080:443
 
 - Run the below command to get started with the Application
 ```bash
+git clone https://github.com/sumitNITS/ArgoCD-Monitor-System.git
+```
+```bash
+cd ArgoCD-Monitor-System
+```
+```bash
 kubectl apply -f argocd-app-config.yml
 ```
 ```bash
